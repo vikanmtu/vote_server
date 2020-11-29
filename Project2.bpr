@@ -1,0 +1,221 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.06.00"/>
+    <PROJECT value="Project2.exe"/>
+    <OBJFILES value="Unit1.obj ecc\to_bytes.obj ecc\add.obj ecc\copy.obj ecc\cswap.obj 
+      ecc\from_bytes.obj ecc\invert.obj ecc\mul121665.obj ecc\mul.obj 
+      ecc\r2p.obj ecc\scalarmult.obj ecc\sqr.obj ecc\sub.obj 
+      pair\src\base\std\bigint\bi_const.obj pair\src\base\std\bigint\bi.obj 
+      pair\src\base\std\ec\ecfp.obj pair\src\base\std\ec\compress.obj 
+      pair\src\base\std\ec\ecfp2.obj pair\src\base\std\fp\fp.obj 
+      pair\src\base\std\fp\fp2.obj pair\src\base\std\fp\fp4.obj 
+      pair\src\base\std\fp\fp12.obj pair\src\gss\bls.obj pair\src\hash\sha1.obj 
+      pair\src\hash\hashing.obj pair\src\hash\Keccak-compact.obj 
+      pair\src\myassert.obj pair\src\param.obj pair\src\rand.obj rnd\trng.obj 
+      rnd\havege.obj rnd\timing.obj shake\shake.obj shake\KeccakP800.obj 
+      sql\sqlite3.obj srv\srv_vote.obj srv\server.obj srv\srv_gets.obj 
+      srv\srv_idnt.obj srv\srv_inir.obj srv\srv_iniv.obj srv\srv_join.obj 
+      srv\srv_open.obj srv\srv_regs.obj tools\whereami.obj tools\amath.obj 
+      tools\b64.obj tools\base32.obj tools\cli_verb.obj tools\srv_verb.obj 
+      pair\src\myutil.obj pair\src\bench_util.obj tcp\trr.obj 
+      pair\src\ibe\bbkem.obj pair\src\base\std\pbc\pbc_bn.obj tools\convert.obj 
+      web\webtcp.obj web\websrv.obj srv\srv_webr.obj srv\srv_webv.obj 
+      web\websrv_ru.obj"/>
+    <RESFILES value="Project2.res"/>
+    <IDLFILES value=""/>
+    <IDLGENFILES value=""/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES)"/>
+    <LIBFILES value=""/>
+    <LIBRARIES value=""/>
+    <SPARELIBS value=""/>
+    <PACKAGES value="vcl.bpi rtl.bpi dbrtl.bpi adortl.bpi vcldb.bpi vclx.bpi bdertl.bpi 
+      vcldbx.bpi ibxpress.bpi dsnap.bpi cds.bpi bdecds.bpi qrpt.bpi teeui.bpi 
+      teedb.bpi tee.bpi dss.bpi teeqr.bpi dsnapcrba.bpi dsnapcon.bpi vclie.bpi 
+      xmlrtl.bpi inet.bpi inetdbbde.bpi inetdbxpress.bpi inetdb.bpi nmfast.bpi 
+      webdsnap.bpi bcbie.bpi websnap.bpi soaprtl.bpi dclocx.bpi dbexpress.bpi 
+      dbxcds.bpi indy.bpi bcb97axserver.bpi Comm.bpi"/>
+    <PATHCPP value=".;ecc;ecc;ecc;ecc;ecc;ecc;ecc;ecc;ecc;ecc;ecc;ecc;pair\src\base\std\bigint;pair\src\base\std\bigint;pair\src\base\std\ec;pair\src\base\std\ec;pair\src\base\std\ec;pair\src\base\std\fp;pair\src\base\std\fp;pair\src\base\std\fp;pair\src\base\std\fp;pair\src\gss;pair\src\hash;pair\src\hash;pair\src\hash;pair\src;pair\src;pair\src;rnd;rnd;rnd;shake;shake;sql;srv;srv;srv;srv;srv;srv;srv;srv;srv;tools;tools;tools;tools;tools;tools;pair\src;pair\src;tcp;pair\src\ibe;pair\src\base\std\pbc;tools;web;web;srv;srv;web"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="ilink32"/>
+    <USERDEFINES value=""/>
+    <SYSDEFINES value="NO_STRICT;_NO_VCL"/>
+    <MAINSOURCE value="Project2.bpf"/>
+    <INCLUDEPATH value="web;pair\src\base\std\pbc;pair\src\ibe;tcp;tools;srv;sql;shake;rnd;pair\src;pair\src\hash;pair\src\gss;pair\src\base\std\fp;pair\src\base\std\ec;pair\src\base\std\bigint;ecc;vote_s;$(BCB)\include;$(BCB)\include\vcl;&quot;C:\Program Files\Borland\CBuilder6\Projects\vote_s\pair\include&quot;"/>
+    <LIBPATH value="web;pair\src\base\std\pbc;pair\src\ibe;tcp;tools;srv;sql;shake;rnd;pair\src;pair\src\hash;pair\src\gss;pair\src\base\std\fp;pair\src\base\std\ec;pair\src\base\std\bigint;ecc;vote_s;$(BCB)\lib\obj;$(BCB)\lib"/>
+    <WARNINGS value="-w-par"/>
+    <OTHERFILES value=""/>
+  </MACROS>
+  <OPTIONS>
+    <IDLCFLAGS value="-Iweb -Ipair\src\base\std\pbc -Ipair\src\ibe -Itcp -Itools -Isrv -Isql 
+      -Ishake -Irnd -Ipair\src -Ipair\src\hash -Ipair\src\gss 
+      -Ipair\src\base\std\fp -Ipair\src\base\std\ec -Ipair\src\base\std\bigint 
+      -Iecc -Ivote_s -I$(BCB)\include -I$(BCB)\include\vcl 
+      -I&quot;C:\Program Files\Borland\CBuilder6\Projects\vote_s\pair\include&quot; 
+      -src_suffix cpp -boa"/>
+    <CFLAG1 value="-O2 -H=$(BCB)\lib\vcl60.csm -Hc -Vx -Ve -X- -a8 -b- -k- -vi -tWC -tWM- -c"/>
+    <PFLAGS value="-$Y- -$L- -$D- -$A8 -v -JPHNE -M"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zn"/>
+    <LFLAGS value="-D&quot;&quot; -ap -Tpe -x -Gn"/>
+    <OTHERFILES value=""/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0x32.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cw32.lib"/>
+    <OTHERFILES value=""/>
+  </LINKER>
+  <FILELIST>
+      <FILE FILENAME="Project2.res" FORMNAME="" UNITNAME="Project2.res" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Project2.bpf" FORMNAME="" UNITNAME="Project2" CONTAINERID="BPF" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Unit1.c" FORMNAME="" UNITNAME="Unit1" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ecc\to_bytes.c" FORMNAME="" UNITNAME="to_bytes.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ecc\add.c" FORMNAME="" UNITNAME="add.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ecc\copy.c" FORMNAME="" UNITNAME="copy.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ecc\cswap.c" FORMNAME="" UNITNAME="cswap.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ecc\from_bytes.c" FORMNAME="" UNITNAME="from_bytes.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ecc\invert.c" FORMNAME="" UNITNAME="invert.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ecc\mul121665.c" FORMNAME="" UNITNAME="mul121665.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ecc\mul.c" FORMNAME="" UNITNAME="mul.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ecc\r2p.c" FORMNAME="" UNITNAME="r2p.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ecc\scalarmult.c" FORMNAME="" UNITNAME="scalarmult.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ecc\sqr.c" FORMNAME="" UNITNAME="sqr.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ecc\sub.c" FORMNAME="" UNITNAME="sub.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="pair\src\base\std\bigint\bi_const.c" FORMNAME="" UNITNAME="bi_const.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="pair\src\base\std\bigint\bi.c" FORMNAME="" UNITNAME="bi.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="pair\src\base\std\ec\ecfp.c" FORMNAME="" UNITNAME="ecfp.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="pair\src\base\std\ec\compress.c" FORMNAME="" UNITNAME="compress.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="pair\src\base\std\ec\ecfp2.c" FORMNAME="" UNITNAME="ecfp2.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="pair\src\base\std\fp\fp.c" FORMNAME="" UNITNAME="fp.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="pair\src\base\std\fp\fp2.c" FORMNAME="" UNITNAME="fp2.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="pair\src\base\std\fp\fp4.c" FORMNAME="" UNITNAME="fp4.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="pair\src\base\std\fp\fp12.c" FORMNAME="" UNITNAME="fp12.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="pair\src\gss\bls.c" FORMNAME="" UNITNAME="bls" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="pair\src\hash\sha1.c" FORMNAME="" UNITNAME="sha1.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="pair\src\hash\hashing.c" FORMNAME="" UNITNAME="hashing.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="pair\src\hash\Keccak-compact.c" FORMNAME="" UNITNAME="Keccak-compact.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="pair\src\myassert.c" FORMNAME="" UNITNAME="myassert.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="pair\src\param.c" FORMNAME="" UNITNAME="param.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="pair\src\rand.c" FORMNAME="" UNITNAME="rand.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="rnd\trng.c" FORMNAME="" UNITNAME="trng.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="rnd\havege.c" FORMNAME="" UNITNAME="havege.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="rnd\timing.c" FORMNAME="" UNITNAME="timing.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="shake\shake.c" FORMNAME="" UNITNAME="shake.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="shake\KeccakP800.c" FORMNAME="" UNITNAME="KeccakP800.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="sql\sqlite3.c" FORMNAME="" UNITNAME="sqlite3" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="srv\srv_vote.c" FORMNAME="" UNITNAME="srv_vote.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="srv\server.c" FORMNAME="" UNITNAME="server.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="srv\srv_gets.c" FORMNAME="" UNITNAME="srv_gets.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="srv\srv_idnt.c" FORMNAME="" UNITNAME="srv_idnt.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="srv\srv_inir.c" FORMNAME="" UNITNAME="srv_inir.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="srv\srv_iniv.c" FORMNAME="" UNITNAME="srv_iniv.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="srv\srv_join.c" FORMNAME="" UNITNAME="srv_join.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="srv\srv_open.c" FORMNAME="" UNITNAME="srv_open.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="srv\srv_regs.c" FORMNAME="" UNITNAME="srv_regs.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="tools\whereami.c" FORMNAME="" UNITNAME="whereami.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="tools\amath.c" FORMNAME="" UNITNAME="amath.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="tools\b64.c" FORMNAME="" UNITNAME="b64.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="tools\base32.c" FORMNAME="" UNITNAME="base32.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="tools\cli_verb.c" FORMNAME="" UNITNAME="cli_verb.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="tools\srv_verb.c" FORMNAME="" UNITNAME="srv_verb.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="pair\src\myutil.c" FORMNAME="" UNITNAME="myutil.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="pair\src\bench_util.c" FORMNAME="" UNITNAME="bench_util.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="tcp\trr.c" FORMNAME="" UNITNAME="trr" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="pair\src\ibe\bbkem.c" FORMNAME="" UNITNAME="bbkem" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="pair\src\base\std\pbc\pbc_bn.c" FORMNAME="" UNITNAME="pbc_bn" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="tools\convert.c" FORMNAME="" UNITNAME="convert" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="web\webtcp.c" FORMNAME="" UNITNAME="webtcp.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="web\websrv.c" FORMNAME="" UNITNAME="websrv.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="srv\srv_webr.c" FORMNAME="" UNITNAME="srv_webr" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="srv\srv_webv.c" FORMNAME="" UNITNAME="srv_webv" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="web\websrv_ru.c" FORMNAME="" UNITNAME="websrv_ru" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+  </FILELIST>
+  <BUILDTOOLS>
+  </BUILDTOOLS>
+
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=0
+AutoIncBuild=0
+MajorVer=1
+MinorVer=0
+Release=0
+Build=0
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=1033
+CodePage=1252
+
+[Version Info Keys]
+CompanyName=
+FileDescription=
+FileVersion=1.0.0.0
+InternalName=
+LegalCopyright=
+LegalTrademarks=
+OriginalFilename=
+ProductName=
+ProductVersion=1.0.0.0
+Comments=
+
+[Excluded Packages]
+c:\program files\borland\cbuilder6\Bin\dclite60.bpl=Borland Integrated Translation Environment
+c:\program files\borland\cbuilder6\Bin\dclclxdb60.bpl=Borland CLX Database Components
+c:\program files\borland\cbuilder6\Bin\dclclxstd60.bpl=Borland CLX Standard Components
+c:\program files\borland\cbuilder6\Bin\dclbcbsmp60.bpl=Borland Sample Controls Design Time Package
+
+[HistoryLists\hlIncludePath]
+Count=3
+Item0=web;pair\src\base\std\pbc;pair\src\ibe;tcp;tools;srv;sql;shake;rnd;pair\src;pair\src\hash;pair\src\gss;pair\src\base\std\fp;pair\src\base\std\ec;pair\src\base\std\bigint;ecc;vote_s;$(BCB)\include;$(BCB)\include\vcl;C:\Program Files\Borland\CBuilder6\Projects\vote_s\pair\include
+Item1=tools;srv;sql;shake;rnd;pair\src;pair\src\hash;pair\src\gss;pair\src\base\std\fp;pair\src\base\std\ec;pair\src\base\std\bigint;ecc;vote_s;$(BCB)\include;$(BCB)\include\vcl;C:\Program Files\Borland\CBuilder6\Projects\vote_s\pair\include
+Item2=tools;srv;sql;shake;rnd;pair\src;pair\src\hash;pair\src\gss;pair\src\base\std\fp;pair\src\base\std\ec;pair\src\base\std\bigint;ecc;vote_s;$(BCB)\include;$(BCB)\include\vcl
+
+[HistoryLists\hlLibraryPath]
+Count=2
+Item0=web;pair\src\base\std\pbc;pair\src\ibe;tcp;tools;srv;sql;shake;rnd;pair\src;pair\src\hash;pair\src\gss;pair\src\base\std\fp;pair\src\base\std\ec;pair\src\base\std\bigint;ecc;vote_s;$(BCB)\lib\obj;$(BCB)\lib
+Item1=tools;srv;sql;shake;rnd;pair\src;pair\src\hash;pair\src\gss;pair\src\base\std\fp;pair\src\base\std\ec;pair\src\base\std\bigint;ecc;vote_s;$(BCB)\lib\obj;$(BCB)\lib
+
+[HistoryLists\hlDebugSourcePath]
+Count=1
+Item0=$(BCB)\source\vcl
+
+[HistoryLists\hlConditionals]
+Count=1
+Item0=_DEBUG
+
+[Debugging]
+DebugSourceDirs=$(BCB)\source\vcl
+
+[Parameters]
+RunParams=
+Launcher=
+UseLauncher=0
+DebugCWD=
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteLauncher=
+RemoteCWD=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=0
+LinkCGLIB=0
+
+[CORBA]
+AddServerUnit=1
+AddClientUnit=1
+PrecompiledHeaders=1
+  </IDEOPTIONS>
+</PROJECT>
