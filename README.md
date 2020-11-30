@@ -1,5 +1,5 @@
 # vote_server
-Crossplatform server for secret vote
+Crossplatform server for secure voting
 
 Secure e-Voting Server is a main part of secret ballot election and ensures anonimous vote.
  
