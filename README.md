@@ -40,5 +40,5 @@ Then copy tor binary from /usr/bin into your work directory. Alternatively you c
 https://github.com/arlolra/tor/blob/master/INSTALL
 https://github.com/cretz/tor-static
 
-Author: Viktoria Malevanchenko, student of NMTU named acad.Yu.Bugai, Ukraine, Poltava, 2020
+Developer: Viktoria Malevanchenko, student of NMTU named acad.Yu.Bugai, Ukraine, Poltava, 2020
 MaitTo: vika_nmtu@protonmail.com
